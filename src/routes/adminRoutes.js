@@ -6,18 +6,21 @@ var books = [{
         title: 'Lord of the Rings',
         genre: 'Fantasy',
         author: 'Tolkien',
+        bookId: 33,
         read: true
     },
     {
         title: 'War and Peace',
         genre: 'Historical Ficti0n',
         author: 'Tolstoy',
+        bookId: 656,
         read: false
     },
     {
         title: 'Mein Kampf',
         genre: 'Propaganda',
         author: 'Hitler',
+        bookId: 54270,
         read: false
     }
 ];

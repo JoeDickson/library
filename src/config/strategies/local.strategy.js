@@ -10,10 +10,11 @@ module.exports = function() {
         function(username, password, done) {
             var url =
                 'mongodb://localhost:27017/libraryApp';
+
             mongodb.connect(url, function(err, db) {
                 var collection = db.collection('users');
                 collection.findOne({
-                        userName: username
+                        username: username
                     },
                     function(err, results) {
                         if (results.password === password) {
@@ -22,6 +23,7 @@ module.exports = function() {
                         } else {
                             done(null, false, { message: 'Bad password' });
                         }
+
                     }
                 );
             });
